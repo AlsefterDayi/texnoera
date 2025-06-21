@@ -5,93 +5,118 @@
   text-decoration: none;
   list-style: none;
 }
-body{
-  background-color: #000;
-  padding: 10vh;
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.big_margin{
+  margin-top: 300px;
+  position: sticky;
+  padding: 40px 0;
+  font-size: 24px;
 }
 .container{
-  width: 100%;
-  height: 80vh;
+  width:80%;
+  margin: 0 auto;
+}
+.pos_fix{
+  position: fixed;
+  top:200px;
+  right: 100px;
+  font-size: 30px;
+}
+header{
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: sticky;
+  display: flex;
+  margin-top: 80px;
+  top: 0;
+  z-index: 1000;
+  position: sticky;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-size: 24px;
+  font-weight: bold;
+}
+nav ul{
+  display: flex;
+}
+nav ul li{
+  margin: 0 15px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover{
+  color: #c3de3a;
+}
+.main_box{
   position: relative;
-  background-color: blueviolet;
-  
+  width: 400px;
+  height: 400px;
+  background-color: #c3de3a;
 }
 .box{
-  width: 20vw;
-  height: 20vh;
-  background-color: blue;
   position: absolute;
-}
-.right_top{
-  top: 0;
-  right: 0;
-}
-.left_top{
-  top: 0;
-  left: 0;
-}
-.right_btm{
-  bottom: 0;
-  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #e44444;
 }
 .left_btm{
-  bottom: 0;
   left: 0;
+  bottom: 0;
+}
+.right_btm{
+  right: 0;
+  bottom: 0;
+}
+.right_top{
+  right: 0;
+  top: 0;
+}
+.left_top{
+  left: 0;
+  top: 0;
+}
+.center{
+  top: 150px;
+  left: 150px;
 }
 .child_box{
-  width: 5vw;
-  height: 5vh;
-  background-color: red;
   position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #5f34a8;
 }
-.right_top .child_box{
+.left{
+  left: -25px;
+}
+.right{
+  right: -25px;
+}
+.green{
+  background-color: #09dc61;
   bottom: 0;
-  left: 0;
+  z-index: 3;
 }
-.left_top .child_box{
+.red{
+  background-color: #e44444;
   bottom: 0;
-  right: 0;
+  z-index: 2;
 }
-.right_btm .child_box{
-  top: 0;
-  left: 0;
-}
-.left_btm .child_box{
-  top: 0;
-  right: 0;
-}
-.kontur{
-  background-color: tomato;
-}
-.kontur.top_kontur{
-  width: 100%;
-  height: 10vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-.kontur.btm_kontur{
-  width: 100%;
-  height: 10vh;
-  position: absolute;
+.yellow{
+  background-color: #c3de3a;
   bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-.kontur.left_kontur{
-  width: 10vh;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-.kontur.right_kontur{
-  width: 10vh;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
   z-index: 1;
 }

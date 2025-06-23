@@ -5,8 +5,7 @@
   text-decoration: none;
   list-style: none;
 }
-.row
-{
+.row{
   display: flex;
   flex-wrap: wrap;
   width: 100%;

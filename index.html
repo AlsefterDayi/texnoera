@@ -4,58 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Huseyn Askarov -- Simple page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <title>bobobobob</title>
-      </head>
-      <body>
-        <header>
-          <div class="container header-container">
-            <a href="#">LOGO</a>
-            <nav>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-            <div class="search-bar">
-              <form>
-                <input type="text" placeholder="Search..." />
-                <button type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </header>
-        <main>
-          <section class="boxes">
-            <div class="container">
-              <div class="row">
-                <div class="main_box">
-                  <div class="box left_btm"></div>
-                  <div class="box right_top"></div>
-                  <div class="box right_btm"></div>
-                  <div class="box left_top"></div>
-                  <div class="box center">
-                    <div class="child_box left"></div>
-                    <div class="child_box right"></div>
-                  </div>
-                </div>
-                <div class="pos_fix">Position fixedd</div>
+    <header class="nav_bar">
+      <div class="header_container">
+        <div class="nav">
+          <a class="logo" href="./index.html">AMPLIFY</a>
+          <nav>
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#service">Service</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header_contact">
+          <a href="#contact" class="contact_btn">Contact</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="row align_center hero_content">
+            <div class="width_50">
+              <div class="hero_text">
+                <h1>We do things right.</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime ipsa nulla sed quis rerum amet natus quas
+                  necessitatibus.
+                </p>
+                <a href="#contact" class="btn">GET STARTED</a>
               </div>
             </div>
-          </section>
-          <section class="big_margin green"><div class="container">First</div></section>
-          <section class="big_margin red"><div class="container">Second</div></section>
-          <section class="big_margin yellow"><div class="container">Last</div></section>
-        </main>
-      </body>
-    </html>
+            <div class="hero_image width_50">
+              <img
+                src="https://preview.colorlib.com/theme/amplify/images/person_1.jpg.webp"
+                alt="Hero Image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

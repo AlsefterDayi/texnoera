@@ -7,7 +7,7 @@
   font-family: "Mulish", sans-serif;
   scroll-behavior: smooth;
 }
-img{
+img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -17,7 +17,7 @@ img{
   flex-wrap: wrap;
   width: 100%;
 }
-.col-2{
+.col-2 {
   flex: 0 0 50%;
   max-width: 50%;
 }
@@ -168,18 +168,18 @@ nav ul li a:hover {
   display: block;
   margin-bottom: 1.5rem;
 }
-.section_sub_title{
+.section_sub_title {
   font-size: 3rem;
-    color: #000;
-    margin-bottom: 1.8rem;
-    font-weight: 900;
-    max-width: 450px;
+  color: #000;
+  margin-bottom: 1.8rem;
+  font-weight: 900;
+  max-width: 450px;
 }
-.about_content{
+.about_content {
   margin-top: 0;
-    margin-bottom: 1rem;
-        line-height: 1.7;
-    color: gray;
-    font-weight: 300;
-    font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: gray;
+  font-weight: 300;
+  font-size: 1.1rem;
 }

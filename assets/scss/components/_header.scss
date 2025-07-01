@@ -1,0 +1,45 @@
+@use "../variables";
+.nav_bar {
+  background-color: variables.$primaryColor;
+  .container {
+    .nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+
+      .logo {
+        font-weight: 900;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: variables.$pureWhite;
+      }
+
+      nav {
+        ul {
+          display: flex;
+          gap: 20px;
+
+          li {
+            list-style: none;
+
+            a {
+              text-decoration: none;
+              color: variables.$pureWhite;
+              font-size: 16px;
+              transition: color 0.3s ease;
+
+              &.active {
+                color: variables.$customOrange; // Active link color
+              }
+              &:hover {
+                color: variables.$customOrange; // Hover color
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

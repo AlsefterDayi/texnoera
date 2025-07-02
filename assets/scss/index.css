@@ -84,7 +84,7 @@ html {
 .nav_bar .container .nav nav .nav-links li a {
   color: #fff;
   text-decoration: none;
-  padding: 10px;
+  padding: 0.5rem 16px;
   display: inline-block;
   transition: 0.3s;
 }

@@ -7,6 +7,10 @@
   font-family: "Poppins", Arial, sans-serif;
 }
 
+body {
+  background-color: #000;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -17,42 +21,117 @@
   display: flex;
 }
 
-body {
+html {
   scroll-behavior: smooth;
 }
 
 .nav_bar {
   background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .nav_bar .container .nav {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  position: relative;
 }
 .nav_bar .container .nav .logo {
-  font-weight: 900;
+  font-weight: bold;
   font-size: 24px;
-  text-transform: uppercase;
   color: #fff;
+  text-decoration: none;
 }
-.nav_bar .container .nav nav ul {
+.nav_bar .container .nav .menu-toggle {
+  display: none;
+}
+.nav_bar .container .nav .menu-toggle:checked ~ nav {
+  right: 0;
+}
+.nav_bar .container .nav .hamburger {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1001;
+  opacity: 0.5;
+}
+.nav_bar .container .nav .hamburger .none_text {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 5px;
 }
-.nav_bar .container .nav nav ul li {
+.nav_bar .container .nav .hamburger .none_text span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.nav_bar .container .nav .hamburger .menu-text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 4px;
+  margin-left: 2px;
+  text-transform: uppercase;
+}
+.nav_bar .container .nav nav .nav-links {
+  display: flex;
   list-style: none;
 }
-.nav_bar .container .nav nav ul li a {
-  text-decoration: none;
+.nav_bar .container .nav nav .nav-links li a {
   color: #fff;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  transition: 0.3s;
 }
-.nav_bar .container .nav nav ul li a.active {
+.nav_bar .container .nav nav .nav-links li a.active {
   color: #ffbd39;
 }
-.nav_bar .container .nav nav ul li a:hover {
-  color: #ffbd39;
+.nav_bar .container .nav nav .nav-links li a span {
+  position: relative;
+}
+.nav_bar .container .nav nav .nav-links li a span::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: orange;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+.nav_bar .container .nav nav .nav-links li a:hover span::before {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .nav_bar .container .nav .hamburger {
+    display: flex;
+  }
+  .nav_bar .container .nav nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #000;
+    transition: left 0.3s ease;
+    padding-top: 80px;
+    z-index: 999;
+  }
+  .nav_bar .container .nav nav .nav-links {
+    flex-direction: column;
+  }
+  .nav_bar .container .nav nav .nav-links li a {
+    padding: 15px 20px;
+  }
+  .nav_bar .container .nav .menu-toggle:checked ~ nav {
+    left: 0;
+    top: 75px;
+    position: fixed;
+  }
 }/*# sourceMappingURL=index.css.map */

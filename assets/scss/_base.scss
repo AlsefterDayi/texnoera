@@ -1,3 +1,4 @@
+@use "variables";
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,9 @@
   text-decoration: none;
   font-family: "Poppins", Arial, sans-serif;
 }
-
+body{
+  background-color: variables.$primaryColor;
+}
 .container {
   width: 80%;
   margin: 0 auto;
@@ -16,6 +19,6 @@
   width: 100%;
   display: flex;
 }
-body {
+html {
   scroll-behavior: smooth;
 }

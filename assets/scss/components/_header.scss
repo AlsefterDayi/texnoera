@@ -1,43 +1,134 @@
 @use "../variables";
 .nav_bar {
   background-color: variables.$primaryColor;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   .container {
     .nav {
-      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 0;
+      position: relative;
 
       .logo {
-        font-weight: 900;
+        font-weight: bold;
         font-size: 24px;
-        text-transform: uppercase;
         color: variables.$pureWhite;
+        text-decoration: none;
+      }
+
+      .menu-toggle {
+        display: none;
+
+        &:checked ~ nav {
+          right: 0;
+        }
+      }
+
+      .hamburger {
+        display: none;
+        align-items: center;
+        cursor: pointer;
+        z-index: 1001;
+        opacity: 0.5;
+
+        .none_text {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          span {
+            width: 25px;
+            height: 3px;
+            background-color: variables.$pureWhite;
+            border-radius: 3px;
+            transition: 0.3s;
+          }
+        }
+        .menu-text {
+          color: variables.$pureWhite;
+          font-size: 14px;
+          font-weight: 600;
+          margin-top: 4px;
+          margin-left: 2px;
+          text-transform: uppercase;
+        }
       }
 
       nav {
-        ul {
+        .nav-links {
           display: flex;
-          gap: 20px;
+          list-style: none;
 
           li {
-            list-style: none;
-
             a {
-              text-decoration: none;
               color: variables.$pureWhite;
-              font-size: 16px;
-              transition: color 0.3s ease;
+              text-decoration: none;
+              padding: 10px;
+              display: inline-block;
+              transition: 0.3s;
 
               &.active {
-                color: variables.$customOrange; // Active link color
+                color: variables.$customOrange;
               }
-              &:hover {
-                color: variables.$customOrange; // Hover color
+
+              span {
+                position: relative;
+
+                &::before {
+                  content: "";
+                  position: absolute;
+                  bottom: -4px; // linkin altından çıxsın
+                  left: 50%;
+                  width: 0;
+                  height: 2px;
+                  background-color: orange;
+                  transform: translateX(-50%);
+                  transition: width 0.3s ease;
+                }
+              }
+
+              &:hover span::before {
+                width: 100%; // mərkəzdən iki yana yayılsın
               }
             }
           }
+        }
+      }
+
+      // Mobile styles
+      @media (max-width: 768px) {
+        .hamburger {
+          display: flex;
+        }
+
+        nav {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 250px;
+          height: 100vh;
+          background-color: variables.$primaryColor;
+          transition: left 0.3s ease;
+          padding-top: 80px;
+          z-index: 999;
+
+          .nav-links {
+            flex-direction: column;
+
+            li {
+              a {
+                padding: 15px 20px;
+              }
+            }
+          }
+        }
+        .menu-toggle:checked ~ nav {
+          left: 0;
+          top: 75px;
+          position: fixed;
         }
       }
     }

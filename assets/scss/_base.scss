@@ -7,8 +7,8 @@
   text-decoration: none;
   font-family: "Poppins", Arial, sans-serif;
 }
-body{
-  background-color:$primaryColor;
+body {
+  background-color: $primaryColor;
 }
 .container {
   width: 80%;
@@ -22,13 +22,13 @@ body{
 html {
   scroll-behavior: smooth;
 }
-img{
+img {
   width: 100%;
   object-fit: fill;
 }
 
-@media (max-width: 768px){
-  .container{
+@media (max-width: 768px) {
+  .container {
     width: 90%;
   }
 }

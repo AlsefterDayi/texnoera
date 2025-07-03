@@ -1,7 +1,7 @@
 @use "../variables" as *;
 .nav_bar {
   background-color: $primaryColor;
-  position: static;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -67,7 +67,7 @@
             a {
               color: $pureWhite;
               text-decoration: none;
-              padding: .5rem 16px;
+              padding: 0.5rem 20px;
               display: inline-block;
               transition: 0.3s;
 

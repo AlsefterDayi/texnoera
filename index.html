@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/scss/index.css" />
 </head>
 
@@ -60,26 +61,58 @@
       </div>
     </div>
   </header>
-
   <main>
     <section class="hero">
-      <div class="container">
-        <div class="row hero_content">
-          <div class="width_50">
-            <div class="hero_text">
-              <span class="hello">Hello!</span>
-              <h1 class="hero_head">I'm a web desighner based in London</h1>
-              <a href="#" class="btn">Hire me</a>
-              <a href="#" class="btn">My Works</a>
+      <div class="container  swiper">
+        <div class="row swiper-wrapper">
+          <div class=" hero_content swiper-slide">
+            <div class="width_50">
+              <div class="hero_text">
+                <span class="hello">Hello!</span>
+                <h1 class="hero_head">I'm a <span class="color_or">web desighner</span> based in London</h1>
+                <a href="#" class="btn btn_primary">Hire me</a>
+                <a href="#" class="btn btn_tr">My Works</a>
+              </div>
+            </div>
+            <div class="hero_image width_50">
+              <img src="./assets/img/hero-2.png" alt="Hero Image" />
             </div>
           </div>
-          <div class="hero_image width_50">
-            <img src="./assets/img/hero-2.png" alt="Hero Image" />
+          <div class=" hero_content swiper-slide">
+            <div class="width_50">
+              <div class="hero_text">
+                <span class="hello">Hello!</span>
+                <h1 class="hero_head">I'm <span class="color_or">Clarck Tompson</span> A Freelance Web Designer</h1>
+                <a href="#" class="btn btn_primary">Hire me</a>
+                <a href="#" class="btn btn_tr">My Works</a>
+              </div>
+            </div>
+            <div class="hero_image width_50">
+              <img src="./assets/img/hero-1.png" alt="Hero Image" />
+            </div>
           </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiper", {
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+    });
+  </script>
 </body>
 
 </html>

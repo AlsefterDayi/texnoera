@@ -3,18 +3,90 @@
 .hero {
   .container {
     .row {
-      .hero_text {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        right: 0;
-        max-width: 50%;
-        padding-left: 45px;
-        padding-right: 3em;
+      .hero_content {
+        display: flex;
+        align-items: center;
+        .hero_text {
+          color: $pureWhite;
+          .hello {
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: $customOrange;
+          }
+          .hero_head {
+            font-size: 60px;
+            color: $pureWhite;
+            line-height: 1.2;
+            font-weight: 800;
+            margin-bottom: 24px;
+          }
+          .btn {
+            cursor: pointer;
+            -webkit-border-radius: 40px;
+            -moz-border-radius: 40px;
+            -ms-border-radius: 40px;
+            border-radius: 40px;
+            -webkit-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+            -moz-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+            box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            padding: 16px 24px;
+            transition: all 0.3s ease;
+            &.btn_primary {
+              background: $customOrange;
+              border: 1px solid $customOrange;
+              color: $primaryColor;
+              &:hover {
+                color: $pureWhite;
+              }
+            }
+            &.btn_tr {
+              border: 1px solid rgba(255, 255, 255, 0.5);
+              background: transparent;
+              color: $pureWhite;
+              &:hover {
+                color: $customOrange;
+              }
+            }
+          }
+        }
+        @media (max-width: 768px) {
+          display: block;
+          position: relative;
+          padding: 40px 0px;
+          .hero_text {
+            text-align: center;
+            .hero_head {
+              font-size: 40px;
+            }
+          }
+          .hero_image {
+            position: absolute;
+            top: 40px;
+            z-index: -1;
+          }
+        }
       }
+    }
+  }
+  .swiper-pagination {
+    position: relative;
+    transform: translateY(-40px);
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      margin: 5px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $pureWhite;
     }
   }
 }

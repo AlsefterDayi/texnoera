@@ -1,3 +1,10 @@
-.width_50{
-    width:50%;
+@use "./variables" as *;
+.width_50 {
+  width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.color_or {
+  color: $customOrange;
 }

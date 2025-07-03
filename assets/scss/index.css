@@ -25,15 +25,26 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 @media (max-width: 768px) {
   .container {
     width: 90%;
   }
 }
+.width_50 {
+  width: 50%;
+}
+
 .nav_bar {
   background-color: #000;
-  position: sticky;
+  position: static;
   top: 0;
+  left: 0;
   z-index: 1000;
 }
 .nav_bar .container .nav {
@@ -139,4 +150,15 @@ html {
     top: 75px;
     position: fixed;
   }
+}
+
+.hero .container .row .hero_text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  right: 0;
+  max-width: 50%;
+  padding-left: 45px;
+  padding-right: 3em;
 }/*# sourceMappingURL=index.css.map */

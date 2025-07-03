@@ -1,8 +1,9 @@
-@use "../variables";
+@use "../variables" as *;
 .nav_bar {
-  background-color: variables.$primaryColor;
-  position: sticky;
+  background-color: $primaryColor;
+  position: static;
   top: 0;
+  left: 0;
   z-index: 1000;
 
   .container {
@@ -16,7 +17,7 @@
       .logo {
         font-weight: bold;
         font-size: 24px;
-        color: variables.$pureWhite;
+        color: $pureWhite;
         text-decoration: none;
       }
 
@@ -42,13 +43,13 @@
           span {
             width: 25px;
             height: 3px;
-            background-color: variables.$pureWhite;
+            background-color: $pureWhite;
             border-radius: 3px;
             transition: 0.3s;
           }
         }
         .menu-text {
-          color: variables.$pureWhite;
+          color: $pureWhite;
           font-size: 14px;
           font-weight: 600;
           margin-top: 4px;
@@ -64,14 +65,14 @@
 
           li {
             a {
-              color: variables.$pureWhite;
+              color: $pureWhite;
               text-decoration: none;
               padding: .5rem 16px;
               display: inline-block;
               transition: 0.3s;
 
               &.active {
-                color: variables.$customOrange;
+                color: $customOrange;
               }
 
               span {
@@ -110,7 +111,7 @@
           left: -100%;
           width: 250px;
           height: 100vh;
-          background-color: variables.$primaryColor;
+          background-color: $primaryColor;
           transition: all 0.3s ease;
           padding-top: 80px;
           z-index: 999;

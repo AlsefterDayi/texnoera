@@ -1,4 +1,4 @@
-@use "variables";
+@use "variables" as *;
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
   font-family: "Poppins", Arial, sans-serif;
 }
 body{
-  background-color: variables.$primaryColor;
+  background-color:$primaryColor;
 }
 .container {
   width: 80%;
@@ -22,7 +22,10 @@ body{
 html {
   scroll-behavior: smooth;
 }
-
+img{
+  width: 100%;
+  object-fit: fill;
+}
 
 @media (max-width: 768px){
   .container{

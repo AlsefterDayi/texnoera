@@ -25,6 +25,11 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
 .nav_bar {
   background-color: #000;
   position: sticky;
@@ -115,11 +120,11 @@ html {
   .nav_bar .container .nav nav {
     position: fixed;
     top: 0;
-    right: -100%;
+    left: -100%;
     width: 250px;
     height: 100vh;
     background-color: #000;
-    transition: left 0.3s ease;
+    transition: all 0.3s ease;
     padding-top: 80px;
     z-index: 999;
   }

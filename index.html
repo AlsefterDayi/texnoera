@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Huseyn Askarov -- Simple page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+  <title>Magnews HTML Template</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/scss/index.css" />
 </head>
@@ -15,104 +18,33 @@
 <body>
   <header class="nav_bar">
     <div class="container">
-      <div class="nav">
-        <a class="logo" href="./index.html">Clark</a>
-
-        <!-- Hamburger (Mobile toggle) -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-        <label for="menu-toggle" class="hamburger">
-          <span class="none_text">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-          <span class="menu-text">Menu</span>
-        </label>
-
-        <!-- Navigation -->
-        <nav>
-          <ul class="nav-links">
-            <li>
-              <a class="active" href="#"><span>Home</span></a>
-            </li>
-            <li>
-              <a href="#about"><span>About</span></a>
-            </li>
-            <li>
-              <a href="#resume"><span>Resume</span></a>
-            </li>
-            <li>
-              <a href="#service"><span>Services</span></a>
-            </li>
-            <li>
-              <a href="#skill"><span>Skills</span></a>
-            </li>
-            <li>
-              <a href="#project"><span>Projects</span></a>
-            </li>
-            <li>
-              <a href="#blog"><span>Blog</span></a>
-            </li>
-            <li>
-              <a href="#contact"><span>Contact</span></a>
-            </li>
+      <div class="top-header row">
+        <div class="header-links">
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Advertisement</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
           </ul>
-        </nav>
+        </div>
+        <div class="header-social">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
   <main>
-    <section class="hero">
-      <div class="container  swiper">
-        <div class="row swiper-wrapper">
-          <div class=" hero_content swiper-slide">
-            <div class="width_50">
-              <div class="hero_text">
-                <span class="hello">Hello!</span>
-                <h1 class="hero_head">I'm a <span class="color_or">web desighner</span> based in London</h1>
-                <a href="#" class="btn btn_primary">Hire me</a>
-                <a href="#" class="btn btn_tr">My Works</a>
-              </div>
-            </div>
-            <div class="hero_image width_50">
-              <img src="./assets/img/hero-2.png" alt="Hero Image" />
-            </div>
-          </div>
-          <div class=" hero_content swiper-slide">
-            <div class="width_50">
-              <div class="hero_text">
-                <span class="hello">Hello!</span>
-                <h1 class="hero_head">I'm <span class="color_or">Clarck Tompson</span> A Freelance Web Designer</h1>
-                <a href="#" class="btn btn_primary">Hire me</a>
-                <a href="#" class="btn btn_tr">My Works</a>
-              </div>
-            </div>
-            <div class="hero_image width_50">
-              <img src="./assets/img/hero-1.png" alt="Hero Image" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </section>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".swiper", {
-      slidesPerView: 1,
-      loop: true,
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-    });
-  </script>
+  </main>
+
+  <script src="https://kit.fontawesome.com/d992c5b548.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

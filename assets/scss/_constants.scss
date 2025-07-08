@@ -1,10 +1,9 @@
 @use "./variables" as *;
-.width_50 {
-  width: 50%;
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+// @use "./mixins" as *;
+
+.space-between {
+  justify-content: space-between;
 }
-.color_or {
-  color: $customOrange;
+.df{
+  display: flex;
 }

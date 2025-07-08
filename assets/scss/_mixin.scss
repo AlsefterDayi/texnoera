@@ -1,0 +1,32 @@
+@use "./variables" as *;
+@mixin side-borders($color) {
+  border-left: 1px solid $color;
+  display: inline-block;
+
+  &:last-child {
+    border-right: 1px solid $color;
+  }
+}
+@mixin info_btn() {
+  display: inline-block;
+  padding: 0px 15px;
+  height: 30px;
+  line-height: 30px;
+  background: $primaryColor;
+  color: $pureWhite;
+  text-transform: uppercase;
+  font-size: 12.5px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+@mixin info_btn2() {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #222;
+  color: #fff;
+  font-size: 12.5px;
+}

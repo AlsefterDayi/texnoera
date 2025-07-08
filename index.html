@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Magnews HTML Template</title>
-  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./assets/img/icons/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,26 +16,69 @@
 </head>
 
 <body>
-  <header class="nav_bar">
-    <div class="container">
-      <div class="top-header row">
-        <div class="header-links">
-          <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Advertisement</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
-          </ul>
+  <header class="header">
+    <div class="top_header">
+      <div class="container">
+        <div class="row space-between">
+          <div class="header_links ">
+            <ul class="df">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Advertisement</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
+            </ul>
+          </div>
+          <div class="header_social">
+            <ul class="df">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>
         </div>
-        <div class="header-social">
-          <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-          </ul>
+      </div>
+    </div>
+    <div class="center_header">
+      <div class="container">
+        <div class="row space-between">
+          <div class="header_logo">
+            <a href="#" class="logo"><img src="./assets/img/logo.png" alt=""></a>
+          </div>
+          <div class="header_ads">
+            <img class="center-block" src="./assets/img/banners/ad-2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav_header">
+      <div class="container">
+        <div class="row space-between ">
+          <nav class="main_nav">
+            <div class="nav_logo">
+              <a href="#" class="logo"><img src="./assets/img/logo-alt.png" alt=""></a>
+            </div>
+            <ul class="navbar df">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Sport</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Music</a></li>
+              <li><a href="#">Business</a></li>
+            </ul>
+          </nav>
+          <div class="button_nav">
+            <button class="search-collapse-btn"><i class="fa fa-search"></i></button>
+            <button class="nav-collapse-btn"><i class="fa fa-bars"></i></button>
+            <div class="search_form">
+              <form>
+                <input class="input" type="text" name="search" placeholder="Search">
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -43,8 +86,44 @@
   <main>
 
   </main>
-
+  <section class="hero">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="hero_slide">
+            <div class="hero_img">
+              <img src="./assets/img/img-lg-1.jpg" alt="IMG LG 1">
+            </div>
+            <div class="hero_content">
+              <div class="hero_type">
+                <a href="#">NEWS</a>
+                <span><i class="fa fa-file-text"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero_slide">
+            <div class="hero_img">
+              <img src="./assets/img/img-lg-2.jpg" alt="IMG LG 1">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero_slide">
+            <div class="hero_img">
+              <img src="./assets/img/img-lg-3.jpg" alt="IMG LG 1">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
   <script src="https://kit.fontawesome.com/d992c5b548.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

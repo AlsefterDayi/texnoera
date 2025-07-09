@@ -16,6 +16,7 @@
   color: $pureWhite;
   text-transform: uppercase;
   font-size: 12.5px;
+  transition: all 0.3s ease;
   &:hover {
     opacity: 0.8;
   }

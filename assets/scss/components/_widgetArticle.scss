@@ -1,0 +1,67 @@
+@use "../variables" as *;
+@use "../mixin" as *;
+
+.widget_article {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  justify-content: start;
+  .article_img {
+    position: relative;
+    width: 95px;
+    height: 80px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      img {
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+        &::before {
+          @include img_overlay();
+          width: 80px;
+        }
+      }
+    }
+  }
+  .article_body {
+    .article_title {
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      a {
+        font-weight: 700;
+        color: $headersColor;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+    .article_meta {
+      margin: 10px 0;
+      span {
+        display: inline-block;
+        color: $lightGrey;
+        font-weight: 400;
+        margin-right: 10px;
+        font-size: 12.5px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

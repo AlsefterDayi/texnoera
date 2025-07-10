@@ -2,5 +2,7 @@
 @use "./constants";
 @use "./components/header";
 @use "./components/sectionTitle";
+@use "./components/articleCard";
+@use "./components/widgetArticle";
 @use "./pages/home/hero";
 @use "./pages/home/trending";

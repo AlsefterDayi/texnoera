@@ -57,6 +57,15 @@
             }
           }
         }
+        @media (max-width: 768px) {
+          right: 0;
+          flex-wrap: wrap;
+        }
+      }
+    }
+    .tab_content {
+      .row {
+        flex-wrap: wrap;
       }
     }
   }

@@ -4,6 +4,7 @@
 .section_title {
   position: relative;
   margin-bottom: 30px;
+  flex-wrap: wrap;
   .title {
     position: relative;
     display: inline-block;
@@ -37,5 +38,8 @@
     height: 2px;
     background-color: $lightGrey;
     z-index: -1;
+  }
+  @media screen and (max-width: 768px) {
+    justify-content: start;
   }
 }

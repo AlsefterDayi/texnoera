@@ -4,6 +4,28 @@
 .space-between {
   justify-content: space-between;
 }
-.df{
+.df {
   display: flex;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.col-1 {
+  width: 23%;
+  @media screen and (max-width: 992px) {
+    width: 48%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+.col-2 {
+  width: 31%;
+  @media screen and (max-width: 992px) {
+    width: 48%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }

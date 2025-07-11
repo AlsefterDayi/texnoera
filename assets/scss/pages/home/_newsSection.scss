@@ -1,0 +1,134 @@
+@use "../../variables" as *;
+@use "../../mixin" as *;
+
+.news_section {
+  .container {
+    .row {
+      .article {
+        .article_img a {
+          &::before {
+            visibility: hidden;
+          }
+          &:hover {
+            &::before {
+              visibility: visible;
+            }
+          }
+        }
+      }
+      .col-5 {
+        .center_block {
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: scale-down;
+          }
+        }
+        .social_widget {
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+              width: 33.33%;
+              padding: 3px;
+              margin-right: -4px;
+              a {
+                display: block;
+                padding: 6px 15px;
+                font-size: 12.5px;
+                text-transform: uppercase;
+                color: $pureWhite;
+                text-align: center;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                  opacity: 0.8;
+                }
+              }
+              .facebook {
+                background-color: #3b5999;
+              }
+              .twitter {
+                background-color: #00aced;
+              }
+              .google {
+                background-color: #d44332;
+              }
+              .instagram {
+                background-color: #8a3ab9;
+              }
+              .youtube {
+                background-color: #e31010;
+              }
+              .rss {
+                background-color: #fe7e00;
+              }
+            }
+          }
+        }
+        .subscribe_widget {
+          margin-top: 30px;
+          padding: 30px;
+          background-color: $dark;
+          input {
+            background: $pureWhite;
+            width: 100%;
+            height: 40px;
+            padding: 0px 15px;
+            border: 1px solid $dark;
+          }
+          button {
+            margin-top: 15px;
+            display: inline-block;
+            padding: 12px 30px;
+            color: $pureWhite;
+            background-color: $primaryColor;
+            border: none;
+            text-transform: uppercase;
+            opacity: 1;
+            font-size: 12.5px;
+            font-weight: 400;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+        .carousel_widget {
+          margin-top: 15px;
+          .widget_next,
+          .widget_prev {
+            top: 47%;
+            border: none;
+            background: #222;
+            color: #fff;
+            padding: 0px;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 0;
+            margin: 0;
+            transition: all 0.3s ease;
+            &::after {
+              display: none;
+            }
+            &:hover {
+              background: $primaryColor;
+              color: $pureWhite;
+            }
+          }
+          .widget_next {
+            right: 0;
+          }
+          .widget_prev {
+            left: 0;
+          }
+        }
+        .widget_articles {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

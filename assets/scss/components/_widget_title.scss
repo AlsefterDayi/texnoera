@@ -1,0 +1,14 @@
+@use "../variables" as *;
+@use "../mixin" as *;
+
+.widget_title {
+  margin-bottom: 15px;
+  text-align: center;
+  .title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: $lightGrey;
+    margin-top: 0px;
+    font-weight: 700;
+  }
+}

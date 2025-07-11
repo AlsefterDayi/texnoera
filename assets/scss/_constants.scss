@@ -11,6 +11,9 @@
     justify-content: center;
   }
 }
+.flex_wrap {
+  flex-wrap: wrap;
+}
 .col-1 {
   width: 23%;
   @media screen and (max-width: 992px) {
@@ -25,6 +28,24 @@
   @media screen and (max-width: 992px) {
     width: 48%;
   }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+.col-3 {
+  width: 64%;
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
+}
+.col-4 {
+  width: 48%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+.col-5 {
+  width: 31%;
   @media screen and (max-width: 768px) {
     width: 100%;
   }

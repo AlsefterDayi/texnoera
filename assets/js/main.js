@@ -10,7 +10,7 @@ document
     document.querySelector(".main_nav").classList.toggle("active");
     document.querySelector(".nav-collapse-btn").classList.toggle("active");
   });
-var swiper = new Swiper(".hero_slide", {
+var swiper1 = new Swiper(".hero_slide", {
   spaceBetween: 1,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -29,3 +29,4 @@ var swiper = new Swiper(".hero_slide", {
     },
   },
 });
+
